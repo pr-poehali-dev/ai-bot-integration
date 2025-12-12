@@ -28,6 +28,7 @@ const Index = () => {
           <div className="hidden md:flex gap-8">
             <a href="#solution" className="hover:text-primary transition-colors">Решение</a>
             <a href="#features" className="hover:text-primary transition-colors">Возможности</a>
+            <a href="#founder" className="hover:text-primary transition-colors">Основатель</a>
             <a href="#cases" className="hover:text-primary transition-colors">Кейсы</a>
             <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
           </div>
@@ -47,9 +48,13 @@ const Index = () => {
                 <span className="text-primary glow-text"> бизнеса</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Автоматизируем коммерческий отдел с помощью умных ИИ-ботов. 
+                Автоматизируем коммерческий отдел с помощью умных ИИ-ботов для компаний СНГ. 
                 Повышаем конверсию, снимаем рутину с сотрудников.
               </p>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Icon name="MapPin" size={16} />
+                <span>Работаем с бизнесом России, Казахстана, Кыргызстана</span>
+              </div>
               <div className="flex flex-wrap gap-6 pt-4">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
@@ -136,10 +141,10 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "Languages", title: "Русский и Кыргызский", desc: "Поддержка двух языков для работы с любыми клиентами" },
+              { icon: "Languages", title: "Русский и Кыргызский", desc: "Поддержка языков СНГ для работы с локальными клиентами" },
               { icon: "Mic", title: "Аудио сообщения", desc: "Распознавание и ответы на голосовые сообщения" },
               { icon: "Image", title: "Анализ изображений", desc: "Понимание и обработка визуального контента" },
-              { icon: "Database", title: "Интеграция с CRM", desc: "Подключение к Amo CRM, Битрикс24, Yclients, Altegio" },
+              { icon: "Database", title: "Интеграция с CRM", desc: "Подключение к популярным в СНГ системам: Amo CRM, Битрикс24, Yclients, Altegio" },
               { icon: "FileText", title: "Работа по скрипту", desc: "Движение клиента по воронке по вашему сценарию" },
               { icon: "Shield", title: "Не заменяет людей", desc: "Снимает рутину, оставляя энергию на важные задачи" }
             ].map((feature, index) => (
@@ -155,7 +160,67 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-card/50">
+      <section id="founder" className="py-20 px-6 bg-card/50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 md:order-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
+              <img 
+                src="https://cdn.poehali.dev/files/Петр-04.jpg" 
+                alt="Петр Тен"
+                className="relative z-10 rounded-2xl glow-card w-full"
+              />
+              <div className="absolute bottom-8 left-8 right-8 z-20">
+                <div className="bg-background/90 backdrop-blur-md rounded-xl p-6 border border-border">
+                  <p className="font-montserrat text-2xl font-bold leading-tight">
+                    НЕ Я ИМЕЛ БИЗНЕС,<br />
+                    А БИЗНЕС ИМЕЛ МЕНЯ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-6 order-1 md:order-2">
+              <h2 className="font-montserrat text-4xl md:text-5xl font-bold">
+                <span className="text-primary glow-text">Петр Тен</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Основатель проекта по внедрению ИИ технологий в коммерческие отделы компаний СНГ.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Award" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-semibold">8 лет опыта</p>
+                    <p className="text-muted-foreground text-sm">В бизнес-консалтинге по систематизации</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Factory" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Собственный опыт</p>
+                    <p className="text-muted-foreground text-sm">Внедрил ИИ-бота на швейное производство</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Icon name="MapPin" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Локальный эксперт</p>
+                    <p className="text-muted-foreground text-sm">Понимаю специфику бизнеса России, Казахстана, Кыргызстана</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
             Почему <span className="text-primary glow-text">выбирают нас</span>
@@ -163,14 +228,6 @@ const Index = () => {
           <p className="text-center text-muted-foreground mb-12 text-lg">
             Опыт продаж + технологии = результат
           </p>
-          <div className="relative mb-12">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl" />
-            <img 
-              src="https://cdn.poehali.dev/projects/7e53e6e0-eae1-43cf-b426-127fc1c73d4b/files/30f727b4-c96d-42a8-bc6b-17b7dbc83b50.jpg" 
-              alt="Professional Team"
-              className="relative z-10 rounded-2xl glow-card w-full max-h-96 object-cover"
-            />
-          </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 gradient-border">
               <Icon name="Award" className="text-primary mb-4" size={40} />
