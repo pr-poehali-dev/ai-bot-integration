@@ -162,6 +162,9 @@ const Index = () => {
 
       <section id="founder" className="py-20 px-6 bg-card/50">
         <div className="container mx-auto max-w-6xl">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-16">
+            Вкратце <span className="text-primary glow-text">о нас</span>
+          </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
@@ -172,9 +175,8 @@ const Index = () => {
               />
               <div className="absolute bottom-8 left-8 right-8 z-20">
                 <div className="bg-background/90 backdrop-blur-md rounded-xl p-6 border border-border">
-                  <p className="font-montserrat text-2xl font-bold leading-tight">
-                    НЕ Я ИМЕЛ БИЗНЕС,<br />
-                    А БИЗНЕС ИМЕЛ МЕНЯ
+                  <p className="font-montserrat text-xl font-bold leading-tight">
+                    Задача каждого владельца бизнеса - систематизировать процессы и минимизировать человеческий фактор
                   </p>
                 </div>
               </div>
@@ -184,7 +186,7 @@ const Index = () => {
                 <span className="text-primary glow-text">Петр Тен</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Основатель проекта по внедрению ИИ технологий в коммерческие отделы компаний СНГ.
+                Со-учредитель швейного производства "Александра", основатель проекта по внедрению ИИ технологий в коммерческие отделы компаний СНГ.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
