@@ -91,7 +91,56 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="solution" className="py-20 px-6 bg-card/50">
+      <section className="py-20 px-6 bg-card/50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
+            Почему ИИ-боты <span className="text-primary glow-text">выгоднее</span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-16 text-lg">
+            Чем живой сотрудник на первом касании
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-8 gradient-border hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
+                <Icon name="Zap" className="text-accent" size={32} />
+              </div>
+              <div className="mb-4">
+                <div className="text-4xl font-bold text-accent mb-2">15 сек</div>
+                <div className="text-sm text-muted-foreground">вс 2 часа у сотрудников</div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Бот отвечает за 15 секунд, а сотрудники в среднем — в течение 2-х часов. Клиент не успевает потерять интерес.
+              </p>
+            </Card>
+            <Card className="p-8 gradient-border hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mb-6">
+                <Icon name="Clock" className="text-primary" size={32} />
+              </div>
+              <div className="mb-4">
+                <div className="text-4xl font-bold text-primary mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">без выходных и праздников</div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Пока сотрудники спят, бот отвечает. Не теряете клиентов из-за временных рамок рабочего дня.
+              </p>
+            </Card>
+            <Card className="p-8 gradient-border hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
+                <Icon name="UserCheck" className="text-accent" size={32} />
+              </div>
+              <div className="mb-4">
+                <div className="text-4xl font-bold text-accent mb-2">0%</div>
+                <div className="text-sm text-muted-foreground">текучка кадров</div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Нанимаешь молодых сотрудников, обучаешь и они уходят. Бот не увольняется и делает все по инструкции.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
             Внедрение за <span className="text-primary glow-text">4 этапа</span>
@@ -121,24 +170,12 @@ const Index = () => {
 
       <section id="features" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="font-montserrat text-4xl md:text-5xl font-bold mb-4">
-                Возможности <span className="text-accent glow-text">ИИ-бота</span>
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                Технологии, которые работают на ваш результат. Бот работает 24/7 и обрабатывает любые форматы сообщений.
-              </p>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 blur-3xl rounded-full" />
-              <img 
-                src="https://cdn.poehali.dev/projects/7e53e6e0-eae1-43cf-b426-127fc1c73d4b/files/85eac740-5e57-4324-9cff-135a6e41ea12.jpg" 
-                alt="AI Technology"
-                className="relative z-10 rounded-2xl glow-card"
-              />
-            </div>
-          </div>
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
+            Возможности <span className="text-accent glow-text">ИИ-бота</span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-16 text-lg">
+            Технологии, которые работают на ваш результат
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: "Languages", title: "Русский и Кыргызский", desc: "Поддержка языков СНГ для работы с локальными клиентами" },
@@ -160,7 +197,35 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="founder" className="py-20 px-6 bg-card/50">
+      <section id="solution" className="py-20 px-6 bg-card/50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
+            Внедрение за <span className="text-primary glow-text">4 этапа</span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-16 text-lg">
+            Прозрачный процесс от анализа до запуска
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: "Search", title: "Сбор информации", days: "3 дня", desc: "Анализ бизнес-процессов и требований к боту" },
+              { icon: "Code", title: "Разработка", days: "10 дней", desc: "Создание и настройка ИИ-бота под ваши задачи" },
+              { icon: "TestTube", title: "Тестирование", days: "7 дней", desc: "Проверка всех сценариев и доработка" },
+              { icon: "Rocket", title: "Внедрение", days: "3 дня", desc: "Запуск и обучение вашей команды" }
+            ].map((step, index) => (
+              <Card key={index} className="p-6 gradient-border hover:scale-105 transition-transform duration-300">
+                <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
+                  <Icon name={step.icon as any} className="text-primary" size={28} />
+                </div>
+                <div className="text-sm text-accent font-semibold mb-2">{step.days}</div>
+                <h3 className="font-montserrat text-xl font-bold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm">{step.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="founder" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-16">
             Вкратце <span className="text-primary glow-text">о нас</span>
