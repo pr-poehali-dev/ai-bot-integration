@@ -116,12 +116,24 @@ const Index = () => {
 
       <section id="features" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
-            Возможности <span className="text-accent glow-text">ИИ-бота</span>
-          </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">
-            Технологии, которые работают на ваш результат
-          </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="font-montserrat text-4xl md:text-5xl font-bold mb-4">
+                Возможности <span className="text-accent glow-text">ИИ-бота</span>
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Технологии, которые работают на ваш результат. Бот работает 24/7 и обрабатывает любые форматы сообщений.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 blur-3xl rounded-full" />
+              <img 
+                src="https://cdn.poehali.dev/projects/7e53e6e0-eae1-43cf-b426-127fc1c73d4b/files/85eac740-5e57-4324-9cff-135a6e41ea12.jpg" 
+                alt="AI Technology"
+                className="relative z-10 rounded-2xl glow-card"
+              />
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: "Languages", title: "Русский и Кыргызский", desc: "Поддержка двух языков для работы с любыми клиентами" },
@@ -148,9 +160,17 @@ const Index = () => {
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-center mb-4">
             Почему <span className="text-primary glow-text">выбирают нас</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">
+          <p className="text-center text-muted-foreground mb-12 text-lg">
             Опыт продаж + технологии = результат
           </p>
+          <div className="relative mb-12">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl" />
+            <img 
+              src="https://cdn.poehali.dev/projects/7e53e6e0-eae1-43cf-b426-127fc1c73d4b/files/30f727b4-c96d-42a8-bc6b-17b7dbc83b50.jpg" 
+              alt="Professional Team"
+              className="relative z-10 rounded-2xl glow-card w-full max-h-96 object-cover"
+            />
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 gradient-border">
               <Icon name="Award" className="text-primary mb-4" size={40} />
